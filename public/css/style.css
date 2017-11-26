@@ -10,50 +10,58 @@
 
 body {
   background-color: black;
-  font-color: white;
-  justify-content: center;
   display: flex;
   flex-flow: column;
-}
-
-#mars-image {
-  width: 130%;
-  transform: rotate(160deg);
-  z-index: -1;
-}
-
-#top {
-  font-size: 200%;
-}
-
-#header-txt {
-  position: fixed;
-  text-align: center;
   color: white;
-  font-family: "scrump";
-  font-size: 400%;
-  margin-left: 15%;
-  margin-top: -50%;
-  width: 200%:
+}
+
+#mars {
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+#headerstuff {
+  z-index: 1;
+  text-align: center;
+  font-family: scrump;
 }
 
 #content{
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 20%;
-  border: solid green;
-  font-size: 250%;
-  color: white;
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
 }
 
-#subtitle{
-  
+#quote {
+  display: flex;
+  flex-direction: row;
 }
+#quoter{
 
-
+}
 /*Mobile*/
 @media screen and (max-width: 425px) {
+  #headerstuff {
+    margin-top: -100%;
+    font-size: 150%;
+  }
 
+  #mars{
+    margin-left: 200%;
+    margin-top: -290%;
+    width: 5%;
+    max-height: 140%;
+    min-height: 140%;
+    height: 140%;
+    max-width: 5%;
+  }
+
+  #content {
+    margin-top: 100%;
+    font-size: 90%;
+    padding: 6%;
+    width: 90vw;
+  }
 }
 
 /*Tablet*/
