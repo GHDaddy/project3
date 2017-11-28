@@ -16,55 +16,134 @@ body {
 }
 
 #mars {
-    transform: rotate(180deg);
+    transform: rotate(160deg);
     z-index: -1;
+    max-width: 90%;
+    margin-top: -20%;
 }
 
 #headerstuff {
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   font-family: scrump;
+  margin-top: -20%;
+  font-size: 150%;
 }
 
 #content{
-  border: solid blue;
+  font-family: scrump;
   display: flex;
   flex-direction: column;
 }
 
 #quote {
-  display: flex;
-  flex-direction: row;
-}
-#quoter{
 
 }
+
+#quoter {
+  float: left;
+}
+
+#image {
+  float: right;
+  border-bottom: solid white;
+}
+
+/*Desktop Responsiveness*/
+
+
+
+#quoter {
+  width: 30%;
+  padding: 3%;
+  border-top: solid white;
+  border-bottom: solid white;
+}
+
+#content {
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 150%;
+  padding: 5%;
+}
+
+#geyser {
+  width: 80%;
+}
+
+#image {
+  width: 40%;
+}
+
+/*-------------------------------
 /*Mobile*/
 @media screen and (max-width: 425px) {
   #headerstuff {
-    margin-top: -100%;
-    font-size: 150%;
+    margin-top: -40%;
+    font-size: 110%;
   }
 
   #mars{
-    margin-left: 200%;
-    margin-top: -290%;
-    width: 5%;
-    max-height: 140%;
-    min-height: 140%;
-    height: 140%;
-    max-width: 5%;
+    max-width: 90%;
+
+  }
+
+  #quoter {
+    width: 30%;
+    padding: 3%;
+    border-top: solid white;
+    border-bottom: solid white;
   }
 
   #content {
-    margin-top: 100%;
-    font-size: 90%;
-    padding: 6%;
-    width: 90vw;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 80%;
+    padding: 5%;
   }
+
+  #geyser {
+    width: 100%;
+  }
+
+  #image {
+    width: 40%;
+  }
+
 }
 
 /*Tablet*/
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #headerstuff {
+    margin-top: -40%;
+    font-size: 110%;
+  }
 
+  #mars{
+    max-width: 90%;
+  }
+
+  #quoter {
+    width: 30%;
+    padding: 3%;
+    border-top: solid white;
+    border-bottom: solid white;
+  }
+
+  #content {
+    justify-content: center;
+    margin-top: 15%;
+    font-size: 80%;
+    padding: 5%;
+  }
+
+  #geyser {
+    width: 80%;
+  }
+
+  #image {
+    width: 40%;
+  }
+
+}
 }
